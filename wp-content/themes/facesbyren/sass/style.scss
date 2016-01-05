@@ -1,0 +1,83 @@
+/*!
+Theme Name: _s
+Theme URI: http://underscores.me/
+Author: Automattic
+Author URI: http://automattic.com/
+Description:
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: _s
+Tags:
+
+_s is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/** Atomic Design
+ * ==========================================================================
+ * Atomic design is a methodology used to construct web design systems.
+ * There are several distinct stages in atomic design: Atoms, Molecules, Organisms and Templates.
+ * See http://patternlab.io/ for a detailed overview of the concept.
+ */
+
+/** Variables.
+ * ==========================================================================
+ * Global Variables.
+ */
+@import 'variables/colors';
+@import 'variables/structure';
+@import 'variables/typography';
+
+/** Utilities.
+ * ==========================================================================
+ * Mixins and helpers that can be used anywhere and at any time.
+ */
+@import 'utilities/mixins';
+@import 'utilities/sanitize';
+@import 'utilities/helpers';
+@import 'utilities/accessibility';
+
+/** Atoms.
+ * ==========================================================================
+ * In chemistry, atoms are the basic building blocks of matter. They have distinct properties and can't be broken down further without losing their meaning.
+ * Translated to interfaces, atoms are basic tags, such as form labels, inputs or buttons. They also include more abstract elements like color palettes, fonts, and animations.
+ * Atoms are abstract and aren't often terribly useful on their own, but they provide a useful reference and allow you to see all your global styles laid out at a glance.
+ */
+@import 'atoms/links';
+@import 'atoms/buttons';
+@import 'atoms/fields';
+@import 'atoms/blockquotes';
+@import 'atoms/headings';
+@import 'atoms/images';
+@import 'atoms/lists';
+@import 'atoms/tables';
+@import 'atoms/hr';
+@import 'atoms/embeds';
+
+/** Molecules.
+ * ==========================================================================
+ * In chemistry, molecules are groups of atoms bonded together, which take on new properties as a result.
+ * In interfaces, molecules are groups of elements that function together as a unit. For example, a form label, search input, and button atom can combine them together to form a search form molecule.
+ * Building up from atoms to molecules encourages a “do one thing and do it well” mentality, and encourages creating reusable interface patterns.
+ */
+@import 'molecules/nav-primary';
+
+/** Organisms.
+ * ==========================================================================
+ * Organisms are groups of molecules (and possibly atoms) joined together to form distinct section of an interface.
+ * Organisms can consist of similar and/or disparate molecule types. For example, a masthead organism might consist of a logo, navigation, and search form,  * while a “product grid” organism might consist of the same product info molecule repeated over and over.
+ * Building up from molecules to organisms encourages creating standalone, portable, reusable components.
+ */
+
+/** Templates.
+ * ==========================================================================
+ * With templates, we break our biochemistry analogy to get into language that makes more sense to clients and final output. Templates are comprised mostly of organisms combined together to form page-level objects.
+ * Templates provide context for these relatively abstract molecules and organisms, which is helpful for designers and clients alike.
+ * Templates mostly focus on content structure (such as character length, image size, etc) rather than the actual content.
+ */
+
+/** Pages.
+ * ==========================================================================
+ * Page specific styles.
+*/
